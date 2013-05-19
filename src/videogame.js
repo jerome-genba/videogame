@@ -69,7 +69,7 @@ function generateCharacter(params) {
             type += priv.weapon.dmg;
             if (priv.weapon.type !== undefined && priv.weapon.type !== 'phys') {
                 type = priv.weapon.dmg;
-                damage = priv.weapon.type = 'fire';
+                damage = priv.weapon.type;
             }
         }
         // the other personary has took damage with the value and the type given

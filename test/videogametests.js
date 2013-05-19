@@ -1,3 +1,5 @@
+var should = require('chai').should();
+
 // Exo 1 =========================================================================
 QUnit.test('You can initialize a character with given parameters', function(){
     var params = {
@@ -6,7 +8,7 @@ QUnit.test('You can initialize a character with given parameters', function(){
         pv: 37
     };
     var perso = generateCharacter(params);
-    QUnit.equal(perso.getStr(), 5, "Strength");
+    perso.getStr().should.equal(5);
     QUnit.equal(perso.getDef(), 6, "Defense");
     QUnit.equal(perso.getPv(), 37, "PV");
 });
