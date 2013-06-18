@@ -7,9 +7,17 @@ basePath = '';
 files = [
     QUNIT,
     QUNIT_ADAPTER,
-    'src/*.js',
-    //'node_modules/**/lib/*.js',
-    'test/*.js'
+    REQUIRE,
+    REQUIRE_ADAPTER,
+
+    // libs required for test framework
+    //{pattern: 'node_modules/chai/chai.js', included: false},
+    {pattern: 'test/lib/*.js', included: false},
+
+    {pattern: 'src/**/*.js', included: false},
+    {pattern: 'test/**/*.test.js', included: false},
+    'test/main-test.js'
+
 ];
 
 // list of files to exclude
