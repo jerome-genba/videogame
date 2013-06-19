@@ -1,5 +1,5 @@
 var tests = Object.keys(window.__karma__.files).filter(function (file) {
-    return /\.test\.js$/.test(file);
+    return /test\.js$/.test(file);
 });
 
 //require.config({
@@ -22,8 +22,9 @@ require({
     // Testacular serves files from '/  base'
     baseUrl: '/base/src',
     paths: {
-        require: '../test/lib/require',
-        chai : '../test/lib/chai'
+        require: '../lib/require',
+        chai : '../lib/chai',
+        videogame: '../src/videogame'
     },
     // ask requirejs to load these files (all our tests)
     deps: tests,
