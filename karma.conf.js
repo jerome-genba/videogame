@@ -10,14 +10,11 @@ files = [
     REQUIRE,
     REQUIRE_ADAPTER,
 
-    // libs required for test framework
-    //{pattern: 'node_modules/chai/chai.js', included: false},
-    {pattern: 'test/lib/*.js', included: false},
-
+    {pattern: 'lib/**/*.js', included: false},
     {pattern: 'src/**/*.js', included: false},
     {pattern: 'test/**/*.test.js', included: false},
-    'test/main-test.js'
 
+    'test/test-main.js'
 ];
 
 // list of files to exclude

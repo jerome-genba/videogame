@@ -1,4 +1,4 @@
-define(['chai'], function(chai) {
+define(['videogame', 'chai'], function(generateCharacter, chai) {
 
     var should = chai.should();
 
